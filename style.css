@@ -1,8 +1,40 @@
 body {
   background-color: rgb(129, 187, 235);
+  font-family: cursive;
+  font-weight: 100;
+}
+
+.logo {
+  width: 120px;
+}
+
+img {
+  width: 250px;
+  margin-top: 1rem;
+}
+
+h2 {
+  margin-inline-start: -1.5rem;
+}
+
+.articles, .title-nav {
+  display: inline-table;
+  position: absolute;
+  margin-right: 5rem;
+  margin-inline-start: 3rem;
+}
+
+p {
+  text-indent: 20px;
+}
+
+main {
+  padding-top: 1rem;
+  padding-bottom: 30vh;
 }
 
 footer {
   padding-top: 5rem;
   text-align: center;
+  margin-top: 5rem;
 }
