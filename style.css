@@ -14,7 +14,7 @@ img {
 }
 
 h2 {
-  margin-inline-start: -1.5rem;
+  margin-inline-start: 17rem;
 }
 
 .articles, .title-nav {
@@ -29,8 +29,7 @@ p {
 }
 
 main {
-  padding-top: 1rem;
-  padding-bottom: 30vh;
+  padding-bottom: 20vh;
 }
 
 footer {
