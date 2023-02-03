@@ -1,3 +1,5 @@
+/* General */
+
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +7,10 @@
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .flex-container {
@@ -24,8 +30,8 @@ header {
   background-image: url("../images/design1_image2.jpg");
   background-size: cover;
   background-position-y: 20%;
-  min-height: 15vh;
-  margin: 50px 90px 5px 90px;
+  min-height: 20vh;
+  margin: 20px 60px 5px 60px;
   border-radius: 15px;
   width: 100%;
 }
@@ -34,9 +40,11 @@ main {
   width: 100%;
 }
 
+/* Headings & logo */
+
 h1 {
   font-size: 6vh;
-  color: aqua;
+  color: yellow;
   margin: 0px 20px 0px 20px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
@@ -44,18 +52,27 @@ h1 {
 
 h2 {
   font-size: xx-large;
+  font-weight: 1000;
   background-color: rgb(255, 255, 255);
-  color: aqua;
+  color: yellow;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
-  margin: 0px 90px 0px 90px;
+  margin: 0px 60px 0px 60px;
   text-align: center;
   border-radius: 15px;
 }
 
 h3 {
-  color: aqua;
+  color: yellow;
   font-style: italic;
+  font-size: x-large;
+  padding: 5px;
+}
+
+h4 {
+  text-decoration: underline;
+  font-style: italic;
+  margin: 5px 0px 25px 0px;
 }
 
 .logo {
@@ -64,22 +81,27 @@ h3 {
   width: 120px;
 }
 
+.table-1-headings {
+  text-align: center;
+  font-weight: 1000;
+}
+
+/* Nav & Articles */
+
 .nav-articles {
-  margin-top: 25px;
   display: flex;
 }
 
-.articles {
-  margin-left: 80px;
-}
-
 nav {
-  margin: 0px 40px 0px 120px;
+  padding: 10px;
+  justify-content: center;
 }
 
 nav a {
-  color: aqua;
-  margin-block: 10px;
+  color: yellow;
+  font-size: larger;
+  padding: 10px;
+  font-weight: 1000;
 }
 
 .active-link {
@@ -87,22 +109,82 @@ nav a {
   color: rgb(255, 255, 255);
 }
 
+.articles {
+  margin: 0vh 12vh 0vh 12vh;
+}
+
 p {
   text-indent: 20px;
+  font-size: larger;
   margin-block: 3vh;
 }
+
+.mail {
+  color: yellow;
+}
+
+/* Lists */
+
+li {
+  padding: 7px;
+}
+
+.list-motto {
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.categories-list {
+  list-style: lower-latin;
+  margin-left: 40px;
+}
+
+.list-subtitle {
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+/* Table */
+
+.table-1 {
+  border: 2px solid yellow;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  font-weight: 1000;
+  font-size: larger;
+  color: yellow;
+}
+
+td {
+  padding: 10px;
+  font-size: larger;
+}
+
+.table-2 {
+  margin: 10px 0px 20px 0px;
+  text-align: left;
+}
+
+/* Footer */
 
 footer {
   width: 100%;
   align-self: flex-end;
   align-items: center;
   text-align: center;
+  background-color: rgb(0, 0, 0);
 }
 
 footer p {
-  margin-block: 0;
+  margin: 10px;
+  font-size: 1em;
 }
 
-footer a {
-  color: aqua;
+footer a,
+mail {
+  color: yellow;
 }
