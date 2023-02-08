@@ -20,7 +20,6 @@ html {
 
 body {
   background-color: rgb(10, 2, 59);
-  font-weight: 100;
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
@@ -47,8 +46,7 @@ h1 {
   font-weight: 900;
   color: yellow;
   margin: 0px 20px 0px 20px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px black;
 }
 
 h2 {
@@ -56,14 +54,14 @@ h2 {
   font-weight: 1000;
   background-color: rgb(255, 255, 255);
   color: yellow;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px black;
   margin: 0px 60px 0px 60px;
   text-align: center;
   border-radius: 15px;
 }
 
-h3 {
+h3,
+caption {
   color: yellow;
   font-style: italic;
   font-size: 1.3em;
@@ -118,14 +116,65 @@ nav a:hover {
   color: rgb(255, 255, 255);
 }
 
-.articles {
-  margin: 0vh 12vh 0vh 0vh;
-  padding: 10px;
+.articles-rules {
+  margin: 0vh 12vh 0vh 3vh;
+  padding: 20px;
+}
+
+.articles-about {
+  margin: 0vh 12vh 0vh 3vh;
+  padding: 20px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+.articles-home,
+.article-contact {
+  padding: 20px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  background-color: aqua;
+  margin: auto;
+}
+
+.article-contact h3 {
+  font-size: 1.9em;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+}
+
+.article-contact p,
+.articles-home p,
+.articles-about p {
+  color: rgb(10, 2, 59);
+}
+
+.article-contact article,
+.articles-home article,
+.articles-about article {
+  padding: 20px;
+}
+
+.articles-about h3,
+.articles-home h3 {
+  font-size: 1.9em;
+  -webkit-text-stroke: 1px black;
 }
 
 p {
   text-indent: 20px;
   font-size: 1em;
+}
+
+.emoji {
+  text-align: center;
+}
+
+.emoji:hover {
+  text-align: center;
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 .mail {
@@ -134,44 +183,10 @@ p {
 }
 
 .mail:hover {
-  color: white;
-  font-size: 1.2em;
+  color: rgb(10, 2, 59);
+  font-size: 1.3em;
   transition: 0.5s;
   font-style: italic;
-}
-
-.home-and-about-articles {
-  padding: 20px;
-}
-
-.contact-article {
-  padding: 20px;
-}
-
-.contact-article p {
-  margin: 10px;
-}
-
-/* Rules & Policies Lists */
-
-li {
-  padding: 7px;
-}
-
-.list-motto {
-  text-align: center;
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-.categories-list {
-  list-style: lower-latin;
-  margin-left: 40px;
-}
-
-.list-subtitle {
-  margin-top: 15px;
-  text-decoration: underline;
 }
 
 /* Game Info: Tables & Maps */
@@ -186,19 +201,12 @@ li {
 }
 
 .table-1 td {
-  color: black;
+  color: rgb(10, 2, 59);
 }
 
-.table-1-heading {
-  text-align: center;
-  font-size: 1.6em;
-}
-
-h4 {
-  text-align: center;
-  font-size: 1em;
-  font-style: italic;
-  margin: 5px 0px 25px 0px;
+caption {
+  font-size: 1.9em;
+  font-weight: 900;
 }
 
 th {
@@ -220,6 +228,12 @@ td {
 
 .tr-boxes {
   background-color: aliceblue;
+}
+
+h4 {
+  text-align: center;
+  color: yellow;
+  padding: 5px;
 }
 
 .table-2 {
@@ -292,7 +306,7 @@ fieldset {
 }
 
 label {
-  color: black;
+  color: rgb(10, 2, 59);
   padding: 5px;
 }
 
@@ -300,19 +314,20 @@ input,
 select {
   padding: 4px;
   color: gray;
+  border-radius: 15px;
 }
 
 fieldset p {
   margin-bottom: 15px;
-  color: black;
+  color: rgb(10, 2, 59);
 }
 
 option {
-  color: black;
+  color: rgb(10, 2, 59);
 }
 
 button {
-  color: black;
+  color: rgb(10, 2, 59);
   padding: 10px;
   border-radius: 10px;
 }
@@ -341,6 +356,39 @@ input.short-fields {
 #reset {
   display: flex;
   margin-left: auto;
+}
+
+/* Rules & Policies: Lists */
+
+li {
+  padding: 7px;
+}
+
+li h3 {
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.list-motto {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.categories-list {
+  list-style: lower-latin;
+  margin-left: 40px;
+}
+
+.list-subtitle {
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+dt {
+  color: yellow;
+  font-size: 1.3em;
 }
 
 /* Footer */
