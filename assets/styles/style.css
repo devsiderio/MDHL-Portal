@@ -43,7 +43,8 @@ main {
 /* Headings & logo */
 
 h1 {
-  font-size: 6vh;
+  font-size: 3.4em;
+  font-weight: 900;
   color: yellow;
   margin: 0px 20px 0px 20px;
   -webkit-text-stroke-width: 1px;
@@ -51,7 +52,7 @@ h1 {
 }
 
 h2 {
-  font-size: xx-large;
+  font-size: 2em;
   font-weight: 1000;
   background-color: rgb(255, 255, 255);
   color: yellow;
@@ -65,14 +66,8 @@ h2 {
 h3 {
   color: yellow;
   font-style: italic;
-  font-size: x-large;
+  font-size: 1.3em;
   padding: 5px;
-}
-
-h4 {
-  text-decoration: underline;
-  font-style: italic;
-  margin: 5px 0px 25px 0px;
 }
 
 .logo {
@@ -81,9 +76,12 @@ h4 {
   width: 120px;
 }
 
-.table-1-headings {
-  text-align: center;
-  font-weight: 1000;
+.logo:hover {
+  margin-top: -90px;
+  margin-left: 70vw;
+  width: 120px;
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 /* Nav & Articles */
@@ -99,7 +97,17 @@ nav {
 
 nav a {
   color: yellow;
-  font-size: larger;
+  font-size: 1.1em;
+  padding: 10px;
+  width: 200px;
+  font-weight: 1000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+  transition: 0.5s;
   padding: 10px;
   width: 200px;
   font-weight: 1000;
@@ -112,19 +120,39 @@ nav a {
 
 .articles {
   margin: 0vh 12vh 0vh 0vh;
+  padding: 10px;
 }
 
 p {
   text-indent: 20px;
-  font-size: larger;
-  margin-block: 3vh;
+  font-size: 1em;
 }
 
 .mail {
   color: yellow;
+  text-decoration: none;
 }
 
-/* Lists */
+.mail:hover {
+  color: white;
+  font-size: 1.2em;
+  transition: 0.5s;
+  font-style: italic;
+}
+
+.home-and-about-articles {
+  padding: 20px;
+}
+
+.contact-article {
+  padding: 20px;
+}
+
+.contact-article p {
+  margin: 10px;
+}
+
+/* Rules & Policies Lists */
 
 li {
   padding: 7px;
@@ -132,7 +160,7 @@ li {
 
 .list-motto {
   text-align: center;
-  font-size: x-large;
+  font-size: 1.8em;
   margin-bottom: 10px;
 }
 
@@ -146,28 +174,173 @@ li {
   text-decoration: underline;
 }
 
-/* Table */
+/* Game Info: Tables & Maps */
 
 .table-1 {
   border: 2px solid yellow;
+  border-radius: 10px;
+  background-color: aqua;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
+}
+
+.table-1 td {
+  color: black;
+}
+
+.table-1-heading {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
+  margin: 5px 0px 25px 0px;
 }
 
 th {
   font-weight: 1000;
-  font-size: larger;
+  font-size: 1.3em;
+  -webkit-text-stroke: 1px black;
   color: yellow;
+  padding: 10px;
+}
+
+tr {
+  border: 1px solid yellow;
 }
 
 td {
   padding: 10px;
-  font-size: larger;
+  font-size: 1em;
+}
+
+.tr-boxes {
+  background-color: aliceblue;
 }
 
 .table-2 {
-  margin: 10px 0px 20px 0px;
   text-align: left;
+  padding: 10px;
+}
+
+.table-2 a {
+  color: white;
+  font-size: 0.9em;
+}
+
+.table-2 a:hover {
+  color: yellow;
+  font-size: 1.2em;
+  transition: 0.5s;
+  font-style: italic;
+}
+
+.maps {
+  text-align: center;
+}
+
+.maps > h2 {
+  margin: 20px;
+}
+
+iframe {
+  margin: 15px;
+  border-radius: 10px;
+}
+
+/* Form */
+
+.registration-form {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: medium;
+}
+
+legend {
+  color: yellow;
+  font-size: 1.5em;
+  font-weight: 1000;
+  -webkit-text-stroke: 1px black;
+}
+
+fieldset {
+  border: 2px solid yellow;
+  border-radius: 10px;
+  background-color: aqua;
+  padding: 20px;
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 700px;
+}
+
+.fieldset-row {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.position-container p {
+  font-size: medium;
+  text-indent: 0;
+}
+
+label {
+  color: black;
+  padding: 5px;
+}
+
+input,
+select {
+  padding: 4px;
+  color: gray;
+}
+
+fieldset p {
+  margin-bottom: 15px;
+  color: black;
+}
+
+option {
+  color: black;
+}
+
+button {
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: black;
+  background-color: yellow;
+  transition: 0.5s;
+  padding: 13px;
+  border-radius: 10px;
+}
+
+input.short-fields {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submit {
+  font-size: 1.4em;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reset {
+  display: flex;
+  margin-left: auto;
 }
 
 /* Footer */
@@ -185,7 +358,12 @@ footer p {
   font-size: 1em;
 }
 
-footer a,
-mail {
+footer a {
   color: yellow;
+}
+
+footer a:hover {
+  font-size: 1.2em;
+  font-style: italic;
+  transition: 0.5s;
 }
